@@ -1,12 +1,12 @@
 ## INGESTOR MODULE
 
-What does the `ingestor.py` module execution do is:
+The [`ingestor.py`](https://github.com/CesareIurlaro/aws-proof-of-concept/blob/master/ingestor/ingestor.py) module does the following:
 
-1) Generating 5 milions rows of random - but compliant with a specific DDL schema - data using
+1) It generates 5 milions rows of random - but compliant with a specific DDL schema - data using
    the `get_random_data_as_pandas` function, in form of `pandas` `DataFrame`.
 
 
-2) Writing the data generated in the step-1 into a table in a PostgreSQL DBMS through the `append_dataframe_to_postgres`
+2) It writes the data generated in the step-1 into a table in a PostgreSQL DBMS through the `append_dataframe_to_postgres`
    function. Before trying to append the data, the script executes the DDL file containing the DDL definitions.
 
 ---

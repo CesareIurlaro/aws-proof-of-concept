@@ -2,7 +2,7 @@
 
 In order to be executed, it is required `docker` and `python3` to be installed.
 
-Also, `conf.json` file must be filled with the correct data. I already filled most of it with some default values (which
+Also, [`conf.json`](https://github.com/CesareIurlaro/aws-proof-of-concept/blob/master/conf.json) file must be filled with the correct data. I already filled most of it with some default values (which
 can be changed, if needed), the remaining `XXXXX` values must be compiled though.
 
 - `TABLE_NAME`(i.e. the name of the table in which the script is going to write uploaded data)

@@ -199,7 +199,7 @@ Then, click on `Add all the subnets for this VPC` (as already said, in our case 
 
 In order to manage the Redshift Cluster connections, we need an [**Elastic Network
 Interface**](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html),
-a [** VPC Internet Gateway**](https://docs.aws.amazon.com/it_it/vpc/latest/userguide/VPC_Internet_Gateway.html) and
+a [**VPC Internet Gateway**](https://docs.aws.amazon.com/it_it/vpc/latest/userguide/VPC_Internet_Gateway.html) and
 a [**VPC Route Table**](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Route_Tables.html).
 
 The Elastic Network Interface can be

@@ -10,4 +10,4 @@ logging.info(f"Application started.")
 random_data_df = get_random_data_as_pandas(rows_cardinality=5000000)
 append_dataframe_to_postgres(random_data_df)
 
-logging.info(f"Application ended correctly.")
+logging.info(f"Container ended correctly.")
