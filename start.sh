@@ -3,9 +3,10 @@ docker build --tag pg-to-aws:latest ./pg-to-aws
 
 pgpwd="$(cat conf.json | python3 -c "import sys,json; print(json.load(sys.stdin)['secrets']['POSTGRES_PWD'])")"
 pgusr="$(cat conf.json | python3 -c "import sys,json; print(json.load(sys.stdin)['POSTGRES_USR'])")"
+pghost="$(cat conf.json | python3 -c "import sys,json; print(json.load(sys.stdin)['POSTGRES_HOST'])")"
 
 docker network create pg-net
-docker run -d --network pg-net --network-alias pg-staging -e POSTGRES_PASSWORD="${pgpwd}" -e POSTGRES_USER="${pgusr}" --name pg-staging postgres
+docker run -d --network pg-net --network-alias "${pghost}" -e POSTGRES_PASSWORD="${pgpwd}" -e POSTGRES_USER="${pgusr}" --name pg-staging postgres
 
 sleep 5
 

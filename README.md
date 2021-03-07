@@ -33,18 +33,19 @@ can be changed, if needed), the remaining `XXXXX` values must be compiled though
 
 The following values correspond the `secrets` key, since they are sensible data.
 
-- `AWS_ACCESS_KEY_ID` (i.e. the access key id of the IAM account responsible for the execution **-- must be different
-  from the root account**)
+- `AWS_ACCESS_KEY_ID` (i.e. the access key id of the IAM account responsible for the execution)
 - `AWS_SECRET_KEY` (i.e. the secret access key id corresponding `AWS_ACCESS_KEY_ID`)
 - `POSTGRES_PWD` (i.e. the password corresponding the `POSTGRES_USR` user)
 - `REDSHIFT_PWD` (i.e. the password corresponding the `REDSHIFT_USR` user)
 
 # Explanation
 
-The scope of the program is to build and manager some docker containers. In particular, it:
+The scope of the program is to build and manage some docker containers. In particular, it:
 
 1) Builds the two containers `ingestor` and `pg-to-aws` (which execution is respectively explained
-   in `ingestor/README.md` and `pg-to-aws/README.md`).
+   in [`ingestor/README.md`](https://github.com/CesareIurlaro/aws-proof-of-concept/tree/master/ingestor)
+   and [`pg-to-aws/README.md`](https://github.com/CesareIurlaro/aws-proof-of-concept/tree/master/pg-to-aws).
+
 
 2) Creates a container virtual network called `pg-net`.
 
@@ -60,4 +61,4 @@ there will be the `gzip` that `pg-to-aws` created, uploaded in the S3 bucket and
 
 # Quick start
 
-To make all of this happens, it just is needed the execution of `start.sh`.
+To make all of this happen, just run `start.sh`.

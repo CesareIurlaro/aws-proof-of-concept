@@ -17,13 +17,13 @@ Notice that in order to perform well it has been used the condition on the B-TRE
 
 Once more it is worth saying that this could have been done in a more generic and direct way within `Spark`.
 
----
-
 ## Cloud Configuration
 
 The `pg-to-aws.py` module execution depends on a correct AWS environment setup, on which there must have been created
 the correct IAM user, roles, policies, cluster, vpn, etc. In order to be sure this is done, follow the instruction
-written in the `pg-to-aws/AWS-ENV-SETUP-GUIDE.md`.
+written in
+the [`pg-to-aws/AWS-ENV-SETUP-GUIDE.md`](https://github.com/CesareIurlaro/aws-proof-of-concept/blob/master/pg-to-aws/AWS-ENV-SETUP-GUIDE.md)
+.
 
 ### TODO:
 

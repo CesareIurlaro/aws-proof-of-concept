@@ -1,1 +1,29 @@
-{}
+{
+  "TABLE_NAME": "apps",
+
+  "POSTGRES_HOST": "pg-staging",
+  "POSTGRES_PORT": 5432,
+  "POSTGRES_DB": "postgres",
+  "POSTGRES_USR": "username",
+
+  "AWS_ACCOUNT_ID": "XXXXX",
+  "AWS_REGION_NAME": "eu-central-1",
+
+  "REDSHIFT_HOST": "XXXXX",
+  "REDSHIFT_PORT": 5439,
+  "REDSHIFT_DB": "dev",
+  "REDSHIFT_USR": "awsuser",
+
+  "BUCKET": "postgres-sink",
+  "SINK_FILE": "sink.gzip",
+
+  "S3_FULL_ACCESS_ROLE": "user-s3-full-access",
+  "REDSHIFT_READ_S3_ROLE": "redshift-s3-readonly-access",
+
+  "secrets": {
+    "AWS_ACCESS_KEY_ID": "XXXXX",
+    "AWS_SECRET_KEY": "XXXXX",
+    "POSTGRES_PWD": "XXXXX",
+    "REDSHIFT_PWD": "XXXXX"
+  }
+}
