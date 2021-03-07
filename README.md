@@ -1,10 +1,11 @@
-# Prerequisites
+### Prerequisites
 
 In order to be executed, it is required `docker` and `python3` to be installed.
 
 Also, [`conf.json`](https://github.com/CesareIurlaro/aws-proof-of-concept/blob/master/conf.json) file must be filled with the correct data. I already filled most of it with some default values (which
 can be changed, if needed), the remaining `XXXXX` values must be compiled though.
 
+```
 - `TABLE_NAME`(i.e. the name of the table in which the script is going to write uploaded data)
 
 
@@ -37,8 +38,10 @@ The following values correspond the `secrets` key, since they are sensible data.
 - `AWS_SECRET_KEY` (i.e. the secret access key id corresponding `AWS_ACCESS_KEY_ID`)
 - `POSTGRES_PWD` (i.e. the password corresponding the `POSTGRES_USR` user)
 - `REDSHIFT_PWD` (i.e. the password corresponding the `REDSHIFT_USR` user)
+```
 
-# Explanation
+
+### Explanation
 
 The scope of the program is to build and manage some docker containers. In particular, it:
 
@@ -59,6 +62,6 @@ The scope of the program is to build and manage some docker containers. In parti
 At the end of this, a `./data` folder will be created (if not already existing) on the host machine and also within it
 there will be the `gzip` that `pg-to-aws` created, uploaded in the S3 bucket and imported into the Redshift table.
 
-# Quick start
+## Quick start
 
 To make all of this happen, just run `start.sh`.
